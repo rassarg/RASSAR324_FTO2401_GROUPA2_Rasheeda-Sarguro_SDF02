@@ -3,12 +3,146 @@
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    font-size: 3rem;
-    margin-top: 1.5rem;
-    margin-right: 2em;
-    margin-bottom: 2em;
-    margin-left: 2em;
-    padding: 1.5em;
+body {
+    background-color: #F3E2E4;
+    font-size: 100%;
+    height: 60vh;
+    display: flex;
+/*I had written my code in VSC as I was learning. Only as I was double-checking the admission requirements, I realised we were supposed to build the pen here*/
+  
+/* I struggle with the maths and numbers in general, so the box model idea was very
+challenging for me with the varying dimensions.
+I also still don't fully grasp how to keep different elements structured so that they don't
+change when the width of a screen is changed. But I'm still researching it to getter
+better understanding of it*/
+}
+h1 {
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-right: 10%;
+    text-align: center;
+    height: 50px;
+    color: #362124;
+    font-size: 40px;
+    font-style: grey;
+    text-shadow: -2px 2px #f3f3f3;
+}
+/* I originally had a keyframe implemented for the <h1> element, but I couldn't get it to center properly
+so I've elimiated it entirely*/
+
+/* I grouped my button elements together to make certain elements the same*/
+.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    display: table; 
+    margin-top: 60%;
+}
+/* The button1 bellow I kept as simple as possible to have a base-line in order to build up the challenges on writing CSS code with the other buttons*/
+.button1 {
+    background-color: #813640;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 10px 0px;
+    color: white;   
+    box-shadow: 3px 3px 5px#a9aaa9;
+    text-decoration: overline;
+    text-decoration-thickness: 5%;
+    text-align: center;
+    font-family: sans-serif;
+}
+   /* I couldn't figure out how to make certain animations work without it affecting all my other codes. This is in particular to margins and everything
+   being moved around unintentionally.
+   So I've commented it out for now, but left it in below
+   so that I can come back to it at a later stage:
+
+    animation-name: bounce;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    opacity: 50%;
+    border: none;
+}
+@keyframes bounce {
+    from { 
+        top: 100px;
+       animation-timing-function: ease-out;
+    }
+    to {
+        top: 90px;
+    }
+}
+
+0% {background-color: #ffffff; color:black;}
+25% {background-color: rgba(4, 87, 47, 0.651); color: #fff;}
+50% {background-color: hsla(0, 100%, 50%, 0.651); color: #fff;}
+100% {background-color: #ffffff; color:#000;}
+50% {background-color: #ff0000a6; color: white;}
+25% {background-color: #04572fa6; color: white;}
+0% {background-color: #ffffff; color: black;}
+*/
+/* button 1 animation*/
+
+.button1:hover {
+    transform: translateY(-5px);
+    font-size: 20px;
+    text-shadow: -3px 2px #3c3c3c;
+}
+/*For button2 I wanted to have a transitional shade between button1 and button2, which I decided to apply to the hover effect, and kept the inactive button harmonous with the 'watermelon' theme*/
+.button2 {
+    margin-bottom: 20%;
+    margin-top: 20%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: rgb(254, 254, 254); 
+    background-color: #BD9499;
+    text-decoration-thickness: 5%;
+    text-decoration: blink;
+    text-shadow: 3px 2px #464646;
     
+}
+/* button 2 animation*/
+.button2:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(90deg, rgba(129, 54, 64, 0.5), #214E34);
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-size: 25px;
+    box-shadow: 0 5px 8px #787273;
+    text-shadow: 3px 2px #3c3c3c;
+    border: 5px;
+    border-radius: 5px;
+}
+.button3 {
+    margin-top: 20%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px;
+  background-color: #214E34;
+    color: #F2F8F4;   
+    margin: 20px auto;
+    font-size: 25px;
+    box-shadow: 3px 3px 5px#a9aaa9;
+    text-decoration: underline;
+    text-decoration-thickness: 5%;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+}
+/* button 3 animation*/
+.button3:hover {
+    background: linear-gradient(90deg, #62A77F, #214E34, #62A77F);
+    transform: translateY(-3px);
+    font-size: 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px; color: rgba(255, 255, 255);
+    border-radius: 2px;
+    padding-bottom: 50px;
 }
